@@ -10,7 +10,7 @@
 */
 
 function calculateNetSalary(salary) {
-    var netSalary = salary - salary * 0.13;
+    const netSalary = salary - salary * 0.13;
     console.log("Размер заработной платы за вычетом налогов равен " + netSalary.toFixed(2));
 }
 
