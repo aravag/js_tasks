@@ -23,10 +23,10 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-var userInput = parseInt(prompt("Введите целое число:"), 10);
+const userInput = parseInt(prompt("Введите целое число:"), 10);
 
-var units = userInput % 10;
-var tens = Math.floor((userInput % 100) / 10);
-var hundreds = Math.floor((userInput % 1000) / 100);
+const units = userInput % 10;
+const tens = Math.floor((userInput % 100) / 10);
+const hundreds = Math.floor((userInput % 1000) / 100);
 
 console.log("В числе " + userInput + " количество сотен: " + hundreds + ", десятков: " + tens + ", единиц: " + units);

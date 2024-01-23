@@ -14,10 +14,10 @@
 число 32.
 */
 
-var dayNumber = parseInt(prompt("Введите целое число в интервале [1, 32):"), 10);
+const dayNumber = parseInt(prompt("Введите целое число в интервале [1, 32):"), 10);
 
 if (!isNaN(dayNumber) && dayNumber >= 1 && dayNumber < 32) {
-    var decadeNumber = Math.ceil(dayNumber / 10);
+    const decadeNumber = Math.ceil(dayNumber / 10);
     console.log("Число " + dayNumber + " попадает в " + decadeNumber + " декаду месяца.");
 } else {
     console.log("Неверное значение");
