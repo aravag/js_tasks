@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы о продуктах</title>
+</head>
+
+<body>
+    <div id="addReviewForm">
+        <h2>Добавить отзыв</h2>
+        <label for="productName">Название продукта:</label>
+        <input type="text" id="productName" required>
+        <br>
+        <label for="reviewText">Текст отзыва:</label>
+        <textarea id="reviewText" rows="4" cols="50" required></textarea>
+        <br>
+        <button onclick="addReview()">Добавить отзыв</button>
+    </div>
+
+    <div id="productsList">
+        <h2>Список продуктов</h2>
+        <ul id="productNames"></ul>
+    </div>
+
+    <div id="reviewsList">
+        <h2>Отзывы</h2>
+        <ul id="reviews"></ul>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
